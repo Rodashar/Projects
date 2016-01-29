@@ -12,8 +12,9 @@ namespace QuadrusMotorCompany.Data.Repositories.Interfaces
         VehicleOption GetByVehicleIdOptionId(Guid vehicleId, Guid optionId);
         IEnumerable<VehicleOption> GetByVehicleId(Guid vehicleId);
         IEnumerable<VehicleOption> GetByOptionId(Guid optionid);
-        VehicleOption CreateVehicle(VehicleOption vehicleOptionToCreate);
-        VehicleOption UpdateVehicle(VehicleOption vehicleOptionToUpdate);
-        VehicleOption CancelOrder(VehicleOption vehicleOptionToDelete);
+        VehicleOption CreateVehicleOption(VehicleOption vehicleOptionToCreate);
+        void UpdateVehicleOption(VehicleOption vehicleOptionToUpdate);
+        void DeleteVehicleOption(Guid vehicleId, Guid optionId);
+        void DeleteVehicleOption(VehicleOption vehicleOptionToDelete);
     }
 }

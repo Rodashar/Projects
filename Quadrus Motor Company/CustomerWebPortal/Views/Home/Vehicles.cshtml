@@ -1,0 +1,30 @@
+﻿@using QuadrusMotorCompany.Domain
+
+@{
+    ViewBag.Title = "Our Vehicles";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+<section>
+    @foreach (var vehicle in ViewBag.Vehicles as IEnumerable<Vehicle>)
+    {
+        <h2>@Html.DisplayFor(x=> vehicle.DisplayName)</h2>
+        
+        <div class="description">
+            <ul>
+                @Html.Raw(HttpUtility.HtmlDecode(vehicle.Description))
+            </ul>
+        </div>
+        
+        <div class="price">
+            <p>@Html.Raw(vehicle.BasePrice.ToString("c"))</p>
+        </div>
+        
+        <div class="actions">
+            <input type="button" value="Order Now" onclick="location.href='@Url.Action("OrderVehicle", "Home", new {id=vehicle.Id})'"  />
+        </div>
+    }
+</section>

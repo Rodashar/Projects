@@ -13,12 +13,12 @@ namespace QuadrusMotorCompany.Data.Repositories.Implementations
     {
         public Option GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return FindFirstOrDefault(x => x.Id == id);
         }
 
         public IEnumerable<Option> GetOptions()
         {
-            throw new NotImplementedException();
+            return GetAll();
         }
 
         public Option CreateOption(Option optionToCreate)

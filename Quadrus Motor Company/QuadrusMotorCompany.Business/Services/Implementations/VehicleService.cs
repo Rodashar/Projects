@@ -58,7 +58,14 @@ namespace QuadrusMotorCompany.Business.Services.Implementations
             if (!request.CanProcessRequest())
                 throw new InvalidOperationException();
 
+            this._vehicleRepository.UpdateVehicle(request.VehicleToUpdate);
+
             return new ServiceResponse<RequestSuccessfulResponse>(new RequestSuccessfulResponse() { });
+        }
+
+        public ServiceResponse<RequestSuccessfulResponse> DeleteVehicle(DeleteVehicleRequest request)
+        {
+            throw new NotImplementedException();
         }
     }
 }

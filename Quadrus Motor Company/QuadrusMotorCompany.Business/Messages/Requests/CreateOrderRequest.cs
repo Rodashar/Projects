@@ -14,7 +14,7 @@ namespace QuadrusMotorCompany.Business.Messages.Requests
 
         public override bool CanProcessRequest()
         {
-            return OrderToCreate != null && OrderToCreate.Id != default(Guid);
+            return OrderToCreate != null;
         }
     }
 }

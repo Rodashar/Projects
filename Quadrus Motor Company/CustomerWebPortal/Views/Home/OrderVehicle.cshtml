@@ -1,0 +1,70 @@
+﻿@using QuadrusMotorCompany.Domain
+
+@{
+    ViewBag.Title = "OrderVehicle";
+    var vehicle = ViewBag.Vehicle as Vehicle;
+}
+
+<p>Thank you for your interest in ordering one of our awesome vehicles. Please see below for a summary of the vehicle
+    you are ordering and any available options. Thanks you for your patronage and we look forward to building your 
+    perfect vehicle.</p>
+
+@using(Html.BeginForm("CreateOrder", "Home"))
+{
+    <h2>@Html.Raw(vehicle.DisplayName + " (" + vehicle.BasePrice.ToString("c") + ")")</h2>
+
+    <div class="description">
+        <ul>
+            @Html.Raw(HttpUtility.HtmlDecode(vehicle.Description))
+        </ul>
+    </div>
+
+    <h3>Available Options</h3>
+    <hr />
+    
+    <div class="options">
+        <table class="checkboxlist">
+            <tbody>
+                @foreach (var option in vehicle.Options)
+                {
+                    <tr>
+                        <td style="vertical-align:top">
+                            <input id="@option.Id" type="checkbox" name="SelectedOptions" value="@option.Id" @(option.Price == 0 ? "checked" : "") />
+                        </td>
+
+                        <td style="vertical-align:top">
+                            <h3>@Html.DisplayFor(x => option.Name)</h3>
+
+                            <ul>
+                                @Html.Raw(HttpUtility.HtmlDecode(option.Description))
+                            </ul>
+
+                            @if (option.Price > 0)
+                            {
+                                <p><strong>@Html.Raw(option.Price.ToString("c"))</strong></p>
+                            }
+                            else
+                            {
+                                <p><strong>(Included In Price)</strong></p>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Customer Information</h3>
+    <hr />
+    
+    <div class="customerInfo">
+        Full Name: @Html.TextBox("FullNameTextBox")
+    </div>
+
+    <div class="actions">
+        <input type="submit" value="Place Order" />
+    </div>
+    
+    @Html.HiddenFor(x => vehicle.Id, new { @Name = "VehicleId" })
+    @Html.HiddenFor(x => vehicle.BasePrice, new { @Name = "VehiclePrice" })
+}

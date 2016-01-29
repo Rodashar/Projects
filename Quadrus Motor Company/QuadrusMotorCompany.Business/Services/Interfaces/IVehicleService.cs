@@ -15,5 +15,6 @@ namespace QuadrusMotorCompany.Business.Services.Interfaces
         ServiceResponse<VehiclesResponse> GetAllVehicles(GetAllVehiclesRequest request);
         ServiceResponse<VehicleResponse> CreateVehicle(CreateVehicleRequest request);
         ServiceResponse<RequestSuccessfulResponse> UpdateVehicle(UpdateVehicleRequest request);
+        ServiceResponse<RequestSuccessfulResponse> DeleteVehicle(DeleteVehicleRequest request);
     }
 }

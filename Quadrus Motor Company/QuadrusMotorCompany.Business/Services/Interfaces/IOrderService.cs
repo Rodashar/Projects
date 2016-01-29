@@ -12,8 +12,13 @@ namespace QuadrusMotorCompany.Business.Services.Interfaces
     public interface IOrderService
     {
         ServiceResponse<OrderResponse> FindOrder(FindOrderRequest request);
+        ServiceResponse<OrdersResponse> FindOrders(FindOrderByCustomerRequest request);
+        ServiceResponse<OrdersResponse> GetAllOrders(GetAllOrdersRequest request);
+        ServiceResponse<OrdersResponse> GetPendingOrders(GetPendingOrdersRequest request);
+        ServiceResponse<OrdersResponse> GetCompletedOrders(GetCompletedOrdersRequest request);
         ServiceResponse<OrderResponse> CreateOrder(CreateOrderRequest request);
         ServiceResponse<RequestSuccessfulResponse> UpdateOrder(UpdateOrderRequest request);
         ServiceResponse<RequestSuccessfulResponse> CancelOrder(CancelOrderRequest request);
+        ServiceResponse<RequestSuccessfulResponse> CompleteOrder(CompleteOrderRequest request);
     }
 }

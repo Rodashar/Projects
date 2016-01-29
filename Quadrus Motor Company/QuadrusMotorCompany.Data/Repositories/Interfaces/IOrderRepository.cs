@@ -14,8 +14,9 @@ namespace QuadrusMotorCompany.Data.Repositories.Interfaces
         Order GetNextOrder();
         IEnumerable<Order> GetOrders();
         IEnumerable<Order> GetOrders(Expression<Func<Order, bool>> predicate);
-        Order CreateVehicle(Order orderToCreate);
-        Order UpdateVehicle(Order orderToUpdate);
-        Order CancelOrder(Order orderToDelete);
+        Order CreateOrder(Order orderToCreate);
+        void UpdateOrder(Order orderToUpdate);
+        void DeleteOrder(Guid orderId);
+        void DeleteOrder(Order orderToDelete);
     }
 }

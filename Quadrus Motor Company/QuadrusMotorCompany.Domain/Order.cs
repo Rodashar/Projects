@@ -22,12 +22,12 @@ namespace QuadrusMotorCompany.Domain
         public IEnumerable<Option> Options { get; set; }
 
         [Required]
-        public Int32 SubTotal { get; set; }
+        public Double SubTotal { get; set; }
 
         [Required]
-        public Int32 Salestax { get; set; }
+        public Double Salestax { get; set; }
 
-        public Int32 TotalPrice
+        public Double TotalPrice
         {
             get
             {
@@ -35,7 +35,7 @@ namespace QuadrusMotorCompany.Domain
             }
         }
 
-        public DateTime CompletionDate { get; set; }
+        public Nullable<DateTime> CompletionDate { get; set; }
 
         [Required]
         public DateTime CreatedOn { get; set; }

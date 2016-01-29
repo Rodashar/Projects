@@ -12,6 +12,8 @@ namespace QuadrusMotorCompany.Business.Services.Interfaces
     public interface IVehicleOptionService
     {
         ServiceResponse<VehicleOptionResponse> FindVehicleOption(FindVehicleOptionRequest request);
+        ServiceResponse<VehicleOptionsResponse> FindVehicleOptions(FindVehicleOptionsByVehicleIdRequest request);
+        ServiceResponse<VehicleOptionsResponse> FindVehicleOptions(FindVehicleOptionsByOptionIdRequest request);
         ServiceResponse<VehicleOptionResponse> CreateVehicleOption(CreateVehicleOptionRequest request);
         ServiceResponse<RequestSuccessfulResponse> UpdateVehicleOption(UpdateVehicleOptionRequest request);
         ServiceResponse<RequestSuccessfulResponse> DeleteVehicleOption(DeleteVehicleOptionRequest request);

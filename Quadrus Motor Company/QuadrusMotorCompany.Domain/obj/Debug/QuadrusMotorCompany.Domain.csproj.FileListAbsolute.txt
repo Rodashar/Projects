@@ -5,3 +5,10 @@ C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\Quadr
 C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\obj\Debug\QuadrusMotorCompany.Domain.csprojResolveAssemblyReference.cache
 C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\obj\Debug\QuadrusMotorCompany.Domain.dll
 C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\obj\Debug\QuadrusMotorCompany.Domain.pdb
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\bin\Debug\QuadrusMotorCompany.Domain.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\bin\Debug\QuadrusMotorCompany.Domain.pdb
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\bin\Debug\QuadrusMotorCompany.Core.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\bin\Debug\QuadrusMotorCompany.Core.pdb
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\obj\Debug\QuadrusMotorCompany.Domain.csprojResolveAssemblyReference.cache
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\obj\Debug\QuadrusMotorCompany.Domain.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Domain\obj\Debug\QuadrusMotorCompany.Domain.pdb

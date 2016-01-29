@@ -54,5 +54,7 @@ namespace QuadrusMotorCompany.Domain
 
         [Required]
         public String ModifiedBy { get; set; }
+
+        public IEnumerable<Option> Options { get; set; }
     }
 }

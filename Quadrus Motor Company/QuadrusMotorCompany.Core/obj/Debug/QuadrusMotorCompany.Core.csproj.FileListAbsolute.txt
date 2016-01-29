@@ -7,3 +7,17 @@ C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\Quadr
 C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\obj\Debug\QuadrusMotorCompany.Core.dll
 C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\obj\Debug\QuadrusMotorCompany.Core.pdb
 C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\obj\Debug\QuadrusMotorCompany.Core.csprojResolveAssemblyReference.cache
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\QuadrusMotorCompany.Core.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\QuadrusMotorCompany.Core.pdb
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\CrossCutting.Core.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\CrossCutting.Log4Net.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\log4net.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\log4net.xml
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\obj\Debug\QuadrusMotorCompany.Core.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\obj\Debug\QuadrusMotorCompany.Core.pdb
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\QuadrusMotorCompany.Core.dll.config
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\EntityFramework.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\EntityFramework.xml
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\ClaytonP\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Core\obj\Debug\QuadrusMotorCompany.Core.csprojResolveAssemblyReference.cache

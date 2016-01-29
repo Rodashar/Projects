@@ -10,10 +10,11 @@ namespace QuadrusMotorCompany.Business.Messages.Requests
     public class DeleteVehicleOptionRequest : ServiceRequest
     {
         public Guid VehicleId { get; set; }
+        public Guid OptionId { get; set; }
 
         public override bool CanProcessRequest()
         {
-            return VehicleId != default(Guid);
+            return VehicleId != default(Guid) && OptionId != default(Guid);
         }
     }
 }

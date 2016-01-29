@@ -31,19 +31,57 @@ namespace QuadrusMotorCompany.Business.Services.Implementations
                 });
         }
 
+        public ServiceResponse<VehicleOptionsResponse> FindVehicleOptions(FindVehicleOptionsByVehicleIdRequest request)
+        {
+            if (!request.CanProcessRequest())
+                throw new InvalidOperationException();
+
+            return new ServiceResponse<VehicleOptionsResponse>(new VehicleOptionsResponse()
+            {
+                VehicleOptions = this._vehicleOptionRepository.GetByVehicleId(request.VehicleId)
+            });
+        }
+
+        public ServiceResponse<VehicleOptionsResponse> FindVehicleOptions(FindVehicleOptionsByOptionIdRequest request)
+        {
+            if (!request.CanProcessRequest())
+                throw new InvalidOperationException();
+
+            return new ServiceResponse<VehicleOptionsResponse>(new VehicleOptionsResponse()
+            {
+                VehicleOptions = this._vehicleOptionRepository.GetByOptionId(request.OptionId)
+            });
+        }
+
         public ServiceResponse<VehicleOptionResponse> CreateVehicleOption(CreateVehicleOptionRequest request)
         {
-            throw new NotImplementedException();
+            if (!request.CanProcessRequest())
+                throw new InvalidOperationException();
+
+            return new ServiceResponse<VehicleOptionResponse>(new VehicleOptionResponse()
+                {
+                    VehicleOption = this._vehicleOptionRepository.CreateVehicleOption(request.VehicleOptionToCreate)
+                });
         }
 
         public ServiceResponse<RequestSuccessfulResponse> UpdateVehicleOption(UpdateVehicleOptionRequest request)
         {
-            throw new NotImplementedException();
+            if (!request.CanProcessRequest())
+                throw new InvalidOperationException();
+
+            this._vehicleOptionRepository.UpdateVehicleOption(request.VehicleOptionToUpdate);
+
+            return new ServiceResponse<RequestSuccessfulResponse>(new RequestSuccessfulResponse() { });
         }
 
         public ServiceResponse<RequestSuccessfulResponse> DeleteVehicleOption(DeleteVehicleOptionRequest request)
         {
-            throw new NotImplementedException();
+            if (!request.CanProcessRequest())
+                throw new InvalidOperationException();
+
+            this._vehicleOptionRepository.DeleteVehicleOption(request.VehicleId, request.OptionId);
+
+            return new ServiceResponse<RequestSuccessfulResponse>(new RequestSuccessfulResponse() { });
         }
     }
 }

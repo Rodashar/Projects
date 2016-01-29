@@ -1,0 +1,36 @@
+﻿@using QuadrusMotorCompany.Domain
+
+<nav style="float:left;">
+    <ul id="menu">
+        <li>@Html.ActionLink("All", "Orders", "Workshop", new { filter = "All" }, null)</li>
+        <li>@Html.ActionLink("Pending", "Orders", "Workshop", new { filter = "Pending" }, null)</li>
+        <li>@Html.ActionLink("Completed", "Orders", "Workshop", new { filter = "Completed" }, null)</li>
+    </ul>
+</nav>
+
+<div style="clear:both;"></div>
+
+<h2>Orders</h2>
+<hr />
+
+<div id="OrderListHolder">
+    @if (((IEnumerable<Order>)ViewBag.Orders).Any())
+    {
+        foreach (var order in ViewBag.Orders as IEnumerable<Order>)
+        {
+            var displayName = string.Format("{0}- {1}", order.Customer, order.CreatedOn.ToString("dd/MM/yyyy"));
+
+            <div>
+                <strong>
+                    @Html.ActionLink(displayName, "Order", "Workshop", new { id = order.Id }, null)
+                </strong>
+            </div>
+        }
+    }
+    else
+    {
+        <div style="color: #ff0000;">
+            <p>Sorry! There are no orders available.</p>
+        </div>
+    }
+</div>

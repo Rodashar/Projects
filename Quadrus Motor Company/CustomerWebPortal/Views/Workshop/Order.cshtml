@@ -1,0 +1,59 @@
+﻿@using QuadrusMotorCompany.Domain
+
+@{
+    Order order = ViewBag.Order as Order;
+    Vehicle vehicle = ViewBag.Vehicle as Vehicle;
+    
+    ViewBag.Title = order.CompletionDate == null
+                        ? String.Format("Order - {0}-{1}", order.Customer, order.CreatedOn.ToString("dd/MM/yyy"))
+                        : String.Format("Order - {0}-{1} (Completed)", order.Customer, order.CreatedOn.ToString("dd/MM/yyy"));
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h2>@Html.Raw(vehicle.DisplayName)</h2>
+
+<div class="description">
+    <ul>
+        @Html.Raw(HttpUtility.HtmlDecode(vehicle.Description))
+    </ul>
+</div>
+
+<h3>Selected Options</h3>
+<hr />
+
+<div class="options">
+    <ul>
+        @foreach (var option in order.Options)
+        {
+            <li>
+                <strong>@Html.DisplayFor(x => option.Name)</strong>
+            </li>
+        }
+    </ul>
+</div>
+
+<h3>Customer Information</h3>
+<hr />
+
+<div class="customerInfo">
+    @Html.DisplayFor(x=> order.Customer)
+</div>
+
+<h3>Price</h3>
+<hr />
+
+<div class="priceInfo" style="margin-bottom:10px;">
+    <strong>Base Price: @Html.Raw(vehicle.BasePrice.ToString("c"))</strong><br />
+    <strong>Options: @Html.Raw(order.Options.Sum(x => x.Price).ToString("c"))</strong><br />
+    <strong>Sub Total: @Html.Raw(order.SubTotal.ToString("c"))</strong><br />
+    <strong>Sales Tax: @Html.Raw(order.Salestax.ToString("c"))</strong><br />
+    <strong>Total Price: @Html.Raw(order.TotalPrice.ToString("c"))</strong><br />
+</div>
+
+@if(order.CompletionDate == null)
+{
+    <div class="actions">
+        <input type="button" value="Complete Order" onclick="location.href='@Url.Action("CompleteOrder", "Workshop", new { id = order.Id })'" />
+    </div>
+}

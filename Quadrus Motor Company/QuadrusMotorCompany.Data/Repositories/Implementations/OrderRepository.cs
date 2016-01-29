@@ -13,37 +13,56 @@ namespace QuadrusMotorCompany.Data.Repositories.Implementations
     {
         public Order GetById(Guid id)
         {
-            throw new NotImplementedException();
+            var order = FindFirstOrDefault(x => x.Id == id);
+
+            order.Options = (from option in this._dataContext.Options
+                             join orderOption in this._dataContext.OrderOptions on option.Id equals orderOption.OptionId
+                             where orderOption.OrderId == id
+                             select option)
+                             .ToList();
+
+            return order;
         }
 
         public Order GetNextOrder()
         {
-            throw new NotImplementedException();
+            return FindBy(x => x.CompletionDate == null)
+                    .OrderByDescending(x => x.CreatedOn)
+                    .FirstOrDefault();
         }
 
         public IEnumerable<Order> GetOrders()
         {
-            throw new NotImplementedException();
+            return GetAll();
         }
 
         public IEnumerable<Order> GetOrders(System.Linq.Expressions.Expression<Func<Order, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return FindBy(predicate);
         }
 
-        public Order CreateVehicle(Order orderToCreate)
+        public Order CreateOrder(Order orderToCreate)
         {
-            throw new NotImplementedException();
+            //ToDo: validate order
+            return Create(orderToCreate);
         }
 
-        public Order UpdateVehicle(Order orderToUpdate)
+        public void UpdateOrder(Order orderToUpdate)
         {
-            throw new NotImplementedException();
+            //ToDo: validate order
+            Update(orderToUpdate, orderToUpdate.Id);
         }
 
-        public Order CancelOrder(Order orderToDelete)
+        public void DeleteOrder(Guid orderId)
         {
-            throw new NotImplementedException();
+            var order = FindBy(orderId);
+
+            DeleteOrder(order);
+        }
+
+        public void DeleteOrder(Order orderToDelete)
+        {
+            Delete(orderToDelete);
         }
     }
 }

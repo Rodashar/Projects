@@ -13,12 +13,20 @@ namespace QuadrusMotorCompany.Data.Repositories.Implementations
     {
         public Vehicle GetById(Guid id)
         {
-            throw new NotImplementedException();
+            var vehicle = FindFirstOrDefault(x => x.Id == id);
+
+            vehicle.Options = (from option in this._dataContext.Options
+                               join vehicleOption in this._dataContext.VehicleOptions on option.Id equals vehicleOption.OptionId
+                               where vehicleOption.VehicleId == id
+                               select option)
+                               .ToList();
+
+            return vehicle;
         }
 
         public IEnumerable<Vehicle> GetVehicles()
         {
-            throw new NotImplementedException();
+            return GetAll();
         }
 
         public Vehicle CreateVehicle(Vehicle vehicleToCreate)

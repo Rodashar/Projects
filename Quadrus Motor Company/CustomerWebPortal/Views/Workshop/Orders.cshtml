@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Workshop";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+            </hgroup>
+
+            <p>
+                This website is part of the Quadrus Intermediate/Senior Developer Practicum. The website is meant to simulate a customer portal
+                that can be used to purchase a new vehicle from the fictional Quadrus Motor Company.
+            </p>
+        </div>
+    </section>
+}
+
+<p>
+    Welcome to the workshop portion of the website. Here users can complete pending orders and review existing orders.
+</p>
+
+<p>
+    You can use the links below to filter the view from all orders, pending orders or completed orders.
+</p>
+
+@Html.Partial("OrderList")

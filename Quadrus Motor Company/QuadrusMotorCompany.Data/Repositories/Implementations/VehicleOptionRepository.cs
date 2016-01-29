@@ -26,17 +26,22 @@ namespace QuadrusMotorCompany.Data.Repositories.Implementations
             throw new NotImplementedException();
         }
 
-        public VehicleOption CreateVehicle(VehicleOption vehicleOptionToCreate)
+        public VehicleOption CreateVehicleOption(VehicleOption vehicleOptionToCreate)
         {
             throw new NotImplementedException();
         }
 
-        public VehicleOption UpdateVehicle(VehicleOption vehicleOptionToUpdate)
+        public void UpdateVehicleOption(VehicleOption vehicleOptionToUpdate)
         {
             throw new NotImplementedException();
         }
 
-        public VehicleOption CancelOrder(VehicleOption vehicleOptionToDelete)
+        public void DeleteVehicleOption(Guid vehicleId, Guid optionId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteVehicleOption(VehicleOption vehicleOptionToDelete)
         {
             throw new NotImplementedException();
         }
