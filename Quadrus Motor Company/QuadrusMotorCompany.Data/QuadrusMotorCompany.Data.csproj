@@ -55,6 +55,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\Generics\GenericRepository.cs" />
+    <Compile Include="Repositories\Implementations\OptionRepository.cs" />
+    <Compile Include="Repositories\Implementations\OrderRepository.cs" />
+    <Compile Include="Repositories\Implementations\VehicleOptionRepository.cs" />
+    <Compile Include="Repositories\Implementations\VehicleRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IOptionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IOrderRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IVehicleOptionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IVehicleRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

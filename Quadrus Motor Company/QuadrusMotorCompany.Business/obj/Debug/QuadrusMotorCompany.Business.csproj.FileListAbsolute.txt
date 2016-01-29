@@ -1,0 +1,9 @@
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\bin\Debug\QuadrusMotorCompany.Business.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\bin\Debug\QuadrusMotorCompany.Business.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\obj\Debug\QuadrusMotorCompany.Business.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\obj\Debug\QuadrusMotorCompany.Business.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\obj\Debug\QuadrusMotorCompany.Business.csprojResolveAssemblyReference.cache
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\bin\Debug\QuadrusMotorCompany.Core.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\bin\Debug\QuadrusMotorCompany.Domain.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\bin\Debug\QuadrusMotorCompany.Core.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Business\bin\Debug\QuadrusMotorCompany.Domain.pdb

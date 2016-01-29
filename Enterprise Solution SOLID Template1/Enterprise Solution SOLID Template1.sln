@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Documentation Layer", "00 Documentation Layer", "{2EC4B899-930D-415D-AADA-8D479BB32539}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Presentation Layer", "10 Presentation Layer", "{0458814F-BCEE-4543-A62E-E026CF29F503}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 Business Layer", "20 Business Layer", "{90ED8AE5-5D6B-41A6-83AC-54F4AFB785CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Core", "Enterprise Solution SOLID Template1\Business.Core\Business.Core.csproj", "{B63E07C4-9A9C-4EE0-9BAC-532329C757C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business.Core.Tests", "Enterprise Solution SOLID Template1\Business.Core.Tests\Business.Core.Tests.csproj", "{EC36FF12-1E40-4566-9CF3-DDA1DA06E724}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 Domain Layer", "30 Domain Layer", "{64FD0C8A-C49C-457D-A720-56F2148CFF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Enterprise Solution SOLID Template1\Domain\Domain.csproj", "{C39724A8-4308-4E29-92E6-34985BA9920C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Data Layer", "40 Data Layer", "{CC2C9B64-62E9-40FA-BDE6-BE29646C62F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Fakes", "Enterprise Solution SOLID Template1\Data.Fakes\Data.Fakes.csproj", "{DE354313-E15D-4C7F-9656-D1E322BFA4B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Cross-Cutting Layer", "50 Cross-Cutting Layer", "{C8B107C4-DAB4-43EF-B2E2-08F938F3BE75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting.Extentions", "Enterprise Solution SOLID Template1\CrossCutting.Extentions\CrossCutting.Extentions.csproj", "{A88D2E39-B3BE-4F37-BC34-9CE5F701FA85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting.TestHelpers", "Enterprise Solution SOLID Template1\CrossCutting.TestHelpers\CrossCutting.TestHelpers.csproj", "{77EFBE35-DB50-4B7F-AF96-12116407C15A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting.ValueConverters", "Enterprise Solution SOLID Template1\CrossCutting.ValueConverters\CrossCutting.ValueConverters.csproj", "{4B37CC06-B50B-4AA1-BB74-5A14514729F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "60 Deployment Layer", "60 Deployment Layer", "{F4F8120A-8144-4BE8-B2A8-095F20C6C734}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B63E07C4-9A9C-4EE0-9BAC-532329C757C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63E07C4-9A9C-4EE0-9BAC-532329C757C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63E07C4-9A9C-4EE0-9BAC-532329C757C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63E07C4-9A9C-4EE0-9BAC-532329C757C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC36FF12-1E40-4566-9CF3-DDA1DA06E724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC36FF12-1E40-4566-9CF3-DDA1DA06E724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC36FF12-1E40-4566-9CF3-DDA1DA06E724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC36FF12-1E40-4566-9CF3-DDA1DA06E724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39724A8-4308-4E29-92E6-34985BA9920C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39724A8-4308-4E29-92E6-34985BA9920C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39724A8-4308-4E29-92E6-34985BA9920C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39724A8-4308-4E29-92E6-34985BA9920C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE354313-E15D-4C7F-9656-D1E322BFA4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE354313-E15D-4C7F-9656-D1E322BFA4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE354313-E15D-4C7F-9656-D1E322BFA4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE354313-E15D-4C7F-9656-D1E322BFA4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88D2E39-B3BE-4F37-BC34-9CE5F701FA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88D2E39-B3BE-4F37-BC34-9CE5F701FA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88D2E39-B3BE-4F37-BC34-9CE5F701FA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88D2E39-B3BE-4F37-BC34-9CE5F701FA85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77EFBE35-DB50-4B7F-AF96-12116407C15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77EFBE35-DB50-4B7F-AF96-12116407C15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77EFBE35-DB50-4B7F-AF96-12116407C15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77EFBE35-DB50-4B7F-AF96-12116407C15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B37CC06-B50B-4AA1-BB74-5A14514729F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B37CC06-B50B-4AA1-BB74-5A14514729F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B37CC06-B50B-4AA1-BB74-5A14514729F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B37CC06-B50B-4AA1-BB74-5A14514729F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B63E07C4-9A9C-4EE0-9BAC-532329C757C6} = {90ED8AE5-5D6B-41A6-83AC-54F4AFB785CF}
+		{EC36FF12-1E40-4566-9CF3-DDA1DA06E724} = {90ED8AE5-5D6B-41A6-83AC-54F4AFB785CF}
+		{C39724A8-4308-4E29-92E6-34985BA9920C} = {64FD0C8A-C49C-457D-A720-56F2148CFF53}
+		{DE354313-E15D-4C7F-9656-D1E322BFA4B8} = {CC2C9B64-62E9-40FA-BDE6-BE29646C62F5}
+		{A88D2E39-B3BE-4F37-BC34-9CE5F701FA85} = {C8B107C4-DAB4-43EF-B2E2-08F938F3BE75}
+		{77EFBE35-DB50-4B7F-AF96-12116407C15A} = {C8B107C4-DAB4-43EF-B2E2-08F938F3BE75}
+		{4B37CC06-B50B-4AA1-BB74-5A14514729F1} = {C8B107C4-DAB4-43EF-B2E2-08F938F3BE75}
+	EndGlobalSection
+EndGlobal

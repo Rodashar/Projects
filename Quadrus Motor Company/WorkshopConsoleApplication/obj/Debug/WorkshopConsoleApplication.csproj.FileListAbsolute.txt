@@ -1,0 +1,5 @@
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\WorkshopConsoleApplication\bin\Debug\WorkshopConsoleApplication.exe.config
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\WorkshopConsoleApplication\bin\Debug\WorkshopConsoleApplication.exe
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\WorkshopConsoleApplication\bin\Debug\WorkshopConsoleApplication.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\WorkshopConsoleApplication\obj\Debug\WorkshopConsoleApplication.exe
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\WorkshopConsoleApplication\obj\Debug\WorkshopConsoleApplication.pdb

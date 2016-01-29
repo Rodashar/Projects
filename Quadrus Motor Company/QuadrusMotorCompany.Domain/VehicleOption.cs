@@ -10,12 +10,9 @@ namespace QuadrusMotorCompany.Domain
     public class VehicleOption
     {
         [Key]
-        public Guid Id { get; set; }
-
-        [Required]
         public Guid VehicleId { get; set; }
 
-        [Required]
+        [Key]
         public Guid OptionId { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuadrusMotorCompany.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -13,9 +14,10 @@ namespace QuadrusMotorCompany.Data.Contexts
         public EntityFrameworkDataContext() : base("EntityFrameworkDataContext")
         { }
 
-        public DbSet<QuadrusMotorCompany.Domain.Vehicle> Vehicles { get; set; }
-        public DbSet<QuadrusMotorCompany.Domain.Option> Options { get; set; }
-        public DbSet<QuadrusMotorCompany.Domain.Order> Orders { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<Option> Options { get; set; }
+        public DbSet<VehicleOption> VehicleOptions { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -1,0 +1,16 @@
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\obj\Debug\QuadrusMotorCompany.Data.csprojResolveAssemblyReference.cache
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\obj\Debug\QuadrusMotorCompany.Data.Properties.Resources.resources
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\obj\Debug\QuadrusMotorCompany.Data.csproj.GenerateResource.Cache
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Data.dll.config
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Data.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Data.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\EntityFramework.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Domain.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Core.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Domain.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\EntityFramework.xml
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\bin\Debug\QuadrusMotorCompany.Core.pdb
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\obj\Debug\QuadrusMotorCompany.Data.dll
+C:\Users\clay_\Documents\Visual Studio 2013\Projects\Quadrus Motor Company\QuadrusMotorCompany.Data\obj\Debug\QuadrusMotorCompany.Data.pdb

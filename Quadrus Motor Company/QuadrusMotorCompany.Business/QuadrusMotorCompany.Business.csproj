@@ -39,7 +39,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Messages\Generics\ServiceRequest.cs" />
+    <Compile Include="Messages\Generics\ServiceResponse.cs" />
+    <Compile Include="Messages\Requests\CancelOrderRequest.cs" />
+    <Compile Include="Messages\Requests\CreateOptionRequest.cs" />
+    <Compile Include="Messages\Requests\CreateOrderRequest.cs" />
+    <Compile Include="Messages\Requests\CreateVehicleOptionRequest.cs" />
+    <Compile Include="Messages\Requests\CreateVehicleRequest.cs" />
+    <Compile Include="Messages\Requests\DeleteOptionRequest.cs" />
+    <Compile Include="Messages\Requests\DeleteVehicleOptionRequest.cs" />
+    <Compile Include="Messages\Requests\FindOptionRequest.cs" />
+    <Compile Include="Messages\Requests\FindOrderRequest.cs" />
+    <Compile Include="Messages\Requests\FindVehicleOptionRequest.cs" />
+    <Compile Include="Messages\Requests\FindVehicleRequest.cs" />
+    <Compile Include="Messages\Requests\GetAllVehiclesRequest.cs" />
+    <Compile Include="Messages\Requests\UpdateOptionRequest.cs" />
+    <Compile Include="Messages\Requests\UpdateOrderRequest.cs" />
+    <Compile Include="Messages\Requests\UpdateVehicleOptionRequest.cs" />
+    <Compile Include="Messages\Requests\UpdateVehicleRequest.cs" />
+    <Compile Include="Messages\Responses\OptionResponse.cs" />
+    <Compile Include="Messages\Responses\OptionsResponse.cs" />
+    <Compile Include="Messages\Responses\OrderResponse.cs" />
+    <Compile Include="Messages\Responses\OrdersResponse.cs" />
+    <Compile Include="Messages\Responses\RequestSuccessfulResponse.cs" />
+    <Compile Include="Messages\Responses\Vehicle.cs" />
+    <Compile Include="Messages\Responses\VehicleOptionResponse.cs" />
+    <Compile Include="Messages\Responses\VehicleOptionsResponse.cs" />
+    <Compile Include="Messages\Responses\VehicleResponse.cs" />
+    <Compile Include="Messages\Responses\VehiclesResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Implementations\OptionService.cs" />
+    <Compile Include="Services\Implementations\OrderService.cs" />
+    <Compile Include="Services\Implementations\VehicleOptionService.cs" />
+    <Compile Include="Services\Implementations\VehicleService.cs" />
+    <Compile Include="Services\Interfaces\IOptionService.cs" />
+    <Compile Include="Services\Interfaces\IOrderService.cs" />
+    <Compile Include="Services\Interfaces\IVehicleOptionService.cs" />
+    <Compile Include="Services\Interfaces\IVehicleService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\QuadrusMotorCompany.Core\QuadrusMotorCompany.Core.csproj">
+      <Project>{70d1beb5-44f1-45e4-a4c2-1e3e3b844c9f}</Project>
+      <Name>QuadrusMotorCompany.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuadrusMotorCompany.Data\QuadrusMotorCompany.Data.csproj">
+      <Project>{e792bc4d-c8e2-4c6a-ac92-17ce85f2ccc1}</Project>
+      <Name>QuadrusMotorCompany.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuadrusMotorCompany.Domain\QuadrusMotorCompany.Domain.csproj">
+      <Project>{8246f142-f4b3-40b5-b467-351ec604e5dd}</Project>
+      <Name>QuadrusMotorCompany.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
